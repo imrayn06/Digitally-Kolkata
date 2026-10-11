@@ -777,9 +777,23 @@ img {
 
 .portfolio-img-wrap {
   position: relative;
-  height: 230px;
+  height: 240px;
   overflow: hidden;
-  background: #000;
+  background: #090e11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1.06);
 }
 
 .portfolio-visual {
@@ -1233,43 +1247,312 @@ img {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 70px; /* Room for sticky mobile bottom bar */
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
   .nav-links {
     display: none;
     position: fixed;
     top: 70px;
     left: 0;
     width: 100%;
-    background: var(--bg-surface);
+    background: rgba(11, 25, 29, 0.98);
+    backdrop-filter: blur(20px);
     border-bottom: 2px solid var(--border-medium);
     flex-direction: column;
     padding: 24px;
     gap: 18px;
-    box-shadow: var(--glass-shadow);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
   }
+
   .nav-links.active {
     display: flex;
+    animation: fadeInDown 0.25s ease forwards;
   }
+
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   .mobile-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--border-medium);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.3rem;
   }
+
   .nav-cta .btn-sm {
     display: none;
   }
-  .hero-metrics {
-    grid-template-columns: repeat(2, 1fr);
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 2.8rem);
   }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .metric-card {
+    padding: 16px 12px;
+  }
+
+  .metric-num {
+    font-size: 1.8rem;
+  }
+
+  .service-stack-card {
+    padding: 24px 18px;
+  }
+
+  .service-graphic {
+    max-width: 220px;
+    max-height: 220px;
+  }
+
   .service-bullets {
     grid-template-columns: 1fr;
   }
+
+  .portfolio-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+
   .portfolio-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .footer-grid {
+
+  .portfolio-img-wrap {
+    height: 200px;
+  }
+
+  .calculator-card {
+    padding: 24px 18px;
+  }
+
+  .services-check-grid {
     grid-template-columns: 1fr;
   }
+
+  .quote-summary-box {
+    padding: 20px 16px;
+  }
+
+  .quote-price {
+    font-size: 2.2rem;
+  }
+
+  .contact-wrapper {
+    padding: 24px 18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   .footer-bottom {
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     text-align: center;
+  }
+}
+
+/* ==========================================================================
+   FOUNDER SHOWCASE CARD (About Section)
+   ========================================================================== */
+.founder-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--border-radius-lg);
+  padding: 36px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.founder-img-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid var(--primary);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.founder-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+.founder-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(11, 25, 29, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: var(--primary);
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid var(--border-subtle);
+}
+
+.founder-info h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.founder-title {
+  font-size: 0.92rem;
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.founder-bio {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.96rem;
+  margin-bottom: 20px;
+}
+
+.founder-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.founder-tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  padding: 4px 12px;
+  border-radius: var(--border-radius-full);
+  font-size: 0.78rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.founder-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .founder-card {
+    grid-template-columns: 1fr;
+    padding: 24px 18px;
+    text-align: center;
+  }
+  .founder-img-wrap {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .founder-tags {
+    justify-content: center;
+  }
+  .founder-actions {
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   STICKY MOBILE BOTTOM QUICK BAR
+   ========================================================================== */
+.mobile-bottom-bar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgba(9, 14, 17, 0.96);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border-medium);
+    z-index: 2500;
+    padding: 8px 14px;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 -10px 25px rgba(0, 0, 0, 0.6);
+  }
+
+  .mobile-btn-wa {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25D366;
+    color: #0A1C1F;
+    font-weight: 800;
+    font-size: 0.88rem;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  .mobile-btn-quote {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary) 0%, #E4C82D 100%);
+    color: #0A1C1F;
+    font-weight: 800;
+    font-size: 0.88rem;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
   }
 }

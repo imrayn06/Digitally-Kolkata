@@ -15,6 +15,17 @@
   ],
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "digitallykolkata.online"
+        }
+      ],
+      "destination": "https://www.digitallykolkata.online/:path*",
+      "permanent": true
+    },
+    {
       "source": "/wp-admin(.*)",
       "destination": "/admin",
       "permanent": false
