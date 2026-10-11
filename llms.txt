@@ -1,81 +1,84 @@
 # Digitally Kolkata
 
-> High-Impact Digital Marketing, Brand Strategy & High-Velocity Web Engineering
+> High-Impact Digital Marketing, Brand Strategy & High-Velocity Web Engineering in Kolkata, West Bengal.
 
-## Overview
-Digitally Kolkata is a premier digital agency and marketing consultancy based in Kolkata, West Bengal, India. Founded on the principle that "Local Brands Deserve Global Reach", the agency merges software engineering precision, technical SEO rigor, and behavior-driven visual storytelling to scale businesses across India and international markets.
+Founded on the principle that "Local Brands Deserve Global Reach", Digitally Kolkata merges software engineering precision, technical SEO rigor, and behavior-driven visual storytelling to scale businesses across India and international markets.
 
-- **Website:** https://www.digitallykolkata.online/
+## Quick Links
+
+- [Official Agency Website](https://www.digitallykolkata.online/): Modern edge-delivered portal and service catalog
+- [Core Services](https://www.digitallykolkata.online/#services): Full breakdown of branding, web engineering, UI/UX, product photography, and SEO
+- [Portfolio & Case Studies](https://www.digitallykolkata.online/#portfolio): Client transformations including Walplast, Bisleri, Zee Bangla, and MSP Steel
+- [Project Cost Estimator](https://www.digitallykolkata.online/#estimator): Interactive real-time budget and timeline calculator
+- [About & Founder](https://www.digitallykolkata.online/#about): Founder profile (Shenehashis Dutta), technical background, and certifications
+- [Contact & Inquiries](https://www.digitallykolkata.online/#contact): Direct quote requests and consultation booking
+- [Sitemap](https://www.digitallykolkata.online/sitemap.xml): Complete XML URL directory for web crawlers
+- [Direct WhatsApp](https://wa.me/919073277478): Instant agency messaging line
+
+## Key Agency Details
+
+- **Website:** [https://www.digitallykolkata.online/](https://www.digitallykolkata.online/)
 - **Headquarters:** Salt Lake Sector V, Kolkata, West Bengal 700091, India
-- **Email:** duttarayan3@gmail.com
-- **WhatsApp / Phone:** +91 90732 77478
-
----
+- **Email:** [mailto:duttarayan3@gmail.com](mailto:duttarayan3@gmail.com)
+- **WhatsApp / Phone:** [+91 90732 77478](https://wa.me/919073277478)
 
 ## Leadership & Technical Strategy
+
 - **Founder & Lead Strategist:** Shenehashis Dutta
 - **Background:** Former Software Engineer at Q3 Technologies and Quality Assurance Test Engineer at Wipro. Transitioned into digital marketing, bringing structured QA rigor, DOM crawler analysis, and technical problem-solving into marketing workflows.
 - **Certifications:** HubSpot Academy (Social Media Marketing II, Inbound Marketing, Digital Marketing), KDMI (Kolkata Digital Marketing Institute) Graduate.
-- **Personal Portfolio:** https://narayan-portfolio-three.vercel.app/
-- **GitHub:** https://github.com/imrayn06
-- **LinkedIn:** https://www.linkedin.com/in/im-rayn/
-
----
+- **Personal Portfolio:** [Shenehashis Dutta Portfolio](https://narayan-portfolio-three.vercel.app/)
+- **GitHub:** [imrayn06 on GitHub](https://github.com/imrayn06)
+- **LinkedIn:** [Shenehashis Dutta on LinkedIn](https://www.linkedin.com/in/im-rayn/)
 
 ## Core Capabilities & Services
 
-1. **Brand Identity & Strategy (Base: ₹15,000 INR)**
+1. [Brand Identity & Strategy](https://www.digitallykolkata.online/#services) (Base: ₹15,000 INR)
    - Visual identity systems, logo design, typography guidelines, mascot adaptations, and brand positioning.
    - Proven impact across retail, FMCG, and hospitality.
 
-2. **Custom Web Development (Base: ₹28,000 INR)**
+2. [Custom Web Development](https://www.digitallykolkata.online/#services) (Base: ₹28,000 INR)
    - High-performance, clean-code web applications built without bloated CMS plugins.
    - Sub-second load times (<1.0s), 100/100 Lighthouse performance, mobile-first responsive architecture.
    - Global CDN edge deployment on Vercel with automated SSL.
 
-3. **UI / UX Design (Base: ₹20,000 INR)**
+3. [UI / UX Design](https://www.digitallykolkata.online/#services) (Base: ₹20,000 INR)
    - Human-centered interfaces designed in Figma.
-   - Frictionless conversion funnels, interactive prototyping, and frictionless checkout flows.
+   - Frictionless conversion funnels, interactive prototyping, and seamless checkout flows.
 
-4. **Commercial Product Photography & Motion (Base: ₹18,000 INR)**
+4. [Commercial Product Photography & Motion](https://www.digitallykolkata.online/#services) (Base: ₹18,000 INR)
    - High-resolution studio lighting, macro product styling, packaging shoots, and short-form video reels.
 
-5. **Search Engine Optimization & Core Web Vitals (Base: ₹12,000 INR)**
+5. [Search Engine Optimization & Core Web Vitals](https://www.digitallykolkata.online/#services) (Base: ₹12,000 INR)
    - Crawler mechanics, structured JSON-LD schema integration, citation building, local Kolkata search dominance, and organic keyword acquisition.
 
----
+## Featured Case Studies & Client Work
 
-## Featured Case Studies & Proven Work
+- [Walplast FIFA 2026 Campaign](https://www.digitallykolkata.online/#portfolio):
+  Tournament campaign planning, content strategy, and community engagement rollout delivering **1.1M+ organic views** and **30,000+ engagements** for Walplast Drychem.
 
-- **Walplast (FIFA 2026 Campaign):**
-  - High-voltage tournament campaign planning, content strategy, and community engagement rollout.
-  - Achieved **1.1M+ organic views** and **30,000+ engagements** for Walplast Drychem.
+- [Bisleri 31-Day Winter Hydration Plan](https://www.digitallykolkata.online/#portfolio):
+  31-day winter hydration content strategy featuring 31 editorial storylines, visual scripts, and conversion copywriting.
 
-- **Bisleri (Spec Campaign):**
-  - 31-day winter hydration content strategy featuring 31 editorial storylines, visual scripts, and conversion copywriting.
+- [Zee Bangla Sonar Media Flow](https://www.digitallykolkata.online/#portfolio):
+  Social media coordination flow and content planning support for television properties, structuring 16-post media delivery frameworks.
 
-- **Zee Bangla Sonar:**
-  - Social media coordination flow and content planning support for television properties, structuring 16-post media delivery frameworks.
+- [MSP Steel B2B Support](https://www.digitallykolkata.online/#portfolio):
+  Multi-channel B2B social media architecture and corporate positioning for premier Indian steel manufacturer.
 
-- **MSP Steel:**
-  - Multi-channel B2B social media architecture and corporate positioning for premier Indian steel manufacturer.
+- [Marketing Notebook Ad Teardowns](https://www.digitallykolkata.online/#portfolio):
+  In-depth advertising teardowns of iconic Indian FMCG brands paired with original visual storyboards and consumer psychology frameworks.
 
-- **Marketing Notebook:**
-  - In-depth advertising teardowns of iconic Indian FMCG brands paired with original visual storyboards and consumer psychology frameworks.
+- [Core Fit Social Creative](https://www.digitallykolkata.online/#portfolio):
+  High-conversion fitness creative direction, bold typography, and visual engagement hooks.
 
-- **Core Fit:**
-  - High-conversion fitness creative direction, bold typography, and visual engagement hooks.
+## Interactive Tools & Pricing
 
----
-
-## Interactive Cost Calculator
-Digitally Kolkata provides a transparent, real-time project cost estimator on the homepage:
-- Projects start from ₹12,000 to ₹60,000+ depending on page scope and selected deliverables.
-- Estimated turnaround time ranges from 1 to 3 weeks for standard deployments, up to 4 to 6 weeks for enterprise platforms.
-
----
+- [Project Cost Estimator](https://www.digitallykolkata.online/#estimator):
+  Digitally Kolkata provides a transparent, real-time project cost estimator on the homepage. Projects start from ₹12,000 to ₹60,000+ depending on page scope and selected deliverables. Turnaround ranges from 1 to 3 weeks for standard deployments, up to 4 to 6 weeks for enterprise platforms.
 
 ## How to Engage
-- Use the instant quote calculator on https://www.digitallykolkata.online/#estimator
-- Connect directly via WhatsApp: https://wa.me/919073277478
-- Direct inquiry form available on https://www.digitallykolkata.online/#contact
+
+- Calculate your custom quote on the [Interactive Estimator](https://www.digitallykolkata.online/#estimator)
+- Direct WhatsApp instant messaging: [Chat on WhatsApp](https://wa.me/919073277478)
+- Direct inquiry form available on [Contact Us](https://www.digitallykolkata.online/#contact)
