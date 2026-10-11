@@ -542,6 +542,33 @@ img {
 }
 
 /* ==========================================================================
+   AGENCY REEL VIDEO SHOWCASE (Video-DK)
+   ========================================================================== */
+.video-showcase-section {
+  padding: 50px 0 30px;
+  position: relative;
+}
+
+.video-container-wrap {
+  position: relative;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), var(--gold-glow-subtle);
+  background: #000;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.showcase-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+}
+
+/* ==========================================================================
    SERVICES SECTION (With Original Digitally Kolkata 3D Graphics)
    ========================================================================== */
 .section {
