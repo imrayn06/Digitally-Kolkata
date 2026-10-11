@@ -1,0 +1,20 @@
+{
+  "name": "digitally-kolkata",
+  "version": "1.0.0",
+  "description": "Digitally Kolkata - Premier Creative & Digital Marketing Agency",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve -l 3000 .",
+    "start": "npx serve -l 3000 .",
+    "build": "echo 'Static build ready'"
+  },
+  "keywords": [
+    "digital marketing",
+    "kolkata",
+    "web development",
+    "branding",
+    "seo"
+  ],
+  "author": "Digitally Kolkata",
+  "license": "MIT"
+}
