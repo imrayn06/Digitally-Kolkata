@@ -12,5 +12,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/wp-admin(.*)",
+      "destination": "/admin",
+      "permanent": false
+    },
+    {
+      "source": "/wp-login.php",
+      "destination": "/admin",
+      "permanent": false
+    }
   ]
 }
