@@ -230,6 +230,24 @@ document.addEventListener('DOMContentLoaded', () => {
       // Show instant confirmation
       showToast(`Thank you, ${name}! Your project brief has been recorded. Redirecting to WhatsApp...`);
 
+      // Save lead to localStorage for Admin Portal
+      try {
+        const existingLeads = JSON.parse(localStorage.getItem('dk_leads') || '[]');
+        const newLead = {
+          id: 'lead_' + Date.now(),
+          name,
+          email,
+          phone: phone || 'Not provided',
+          interest,
+          message,
+          timestamp: new Date().toISOString()
+        };
+        existingLeads.unshift(newLead);
+        localStorage.setItem('dk_leads', JSON.stringify(existingLeads));
+      } catch (err) {
+        console.error('Failed to save lead locally:', err);
+      }
+
       // WhatsApp formatted message payload
       const waText = encodeURIComponent(
         `*New Inquiry - Digitally Kolkata*\n` +

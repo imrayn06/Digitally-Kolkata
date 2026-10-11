@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – Digitally Kolkata</title>
+  <link rel="icon" type="image/png" href="../assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="admin-body">
+
+  <!-- LOGIN OVERLAY (Shows if not authenticated) -->
+  <div id="loginOverlay" class="login-modal active">
+    <div class="login-card">
+      <div class="login-brand">
+        <img src="../assets/logo.png" alt="Digitally Kolkata" class="admin-logo">
+        <h2>Digitally Kolkata</h2>
+        <p class="login-subtitle">Agency Control Center</p>
+      </div>
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <label for="adminPass">Enter Passcode / Master Key</label>
+          <div class="input-password-wrapper">
+            <input type="password" id="adminPass" placeholder="Enter password (default: admin)" required autofocus>
+            <button type="button" id="togglePassBtn" class="toggle-pass">👁</button>
+          </div>
+          <span id="loginError" class="error-msg">Incorrect passcode. Try again.</span>
+        </div>
+        <div class="form-group-checkbox">
+          <label><input type="checkbox" id="rememberMe" checked> Keep me logged in</label>
+        </div>
+        <button type="submit" class="btn-primary w-full">Unlock Dashboard</button>
+        <div class="login-hint">
+          <small>Default Passcode: <code>admin</code> (Can be changed inside settings)</small>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MAIN ADMIN APP -->
+  <div id="adminApp" class="admin-layout" style="display: none;">
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+      <div class="sidebar-brand">
+        <img src="../assets/logo.png" alt="DK" class="sidebar-logo">
+        <div class="brand-text">
+          <h3>Digitally Kolkata</h3>
+          <span class="badge-online">● Live on Vercel</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-tab="tab-overview">
+          <span class="nav-icon">📊</span> Overview & Leads
+        </button>
+        <button class="nav-item" data-tab="tab-services">
+          <span class="nav-icon">⚡</span> Services & Pricing
+        </button>
+        <button class="nav-item" data-tab="tab-agency">
+          <span class="nav-icon">🏢</span> Business Info
+        </button>
+        <button class="nav-item" data-tab="tab-portfolio">
+          <span class="nav-icon">📁</span> Portfolio Work
+        </button>
+        <button class="nav-item" data-tab="tab-settings">
+          <span class="nav-icon">⚙️</span> Security & Sync
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="../" target="_blank" class="btn-outline-sm">🌐 Visit Live Website</a>
+        <button id="logoutBtn" class="btn-logout">Sign Out</button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+      <!-- HEADER -->
+      <header class="admin-header">
+        <div class="header-left">
+          <h1 id="tabHeaderTitle">Overview & Client Leads</h1>
+          <p id="tabHeaderSubtitle">Real-time inquiries and project requests captured from your website.</p>
+        </div>
+        <div class="header-right">
+          <span id="currentTime" class="time-badge">--:--:--</span>
+          <a href="https://github.com/imrayn06/Digitally-Kolkata" target="_blank" class="btn-github">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </header>
+
+      <!-- TAB 1: OVERVIEW & LEADS -->
+      <section id="tab-overview" class="admin-tab-pane active">
+        <!-- STATS -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon-wrap gold">📩</div>
+            <div class="stat-details">
+              <span class="stat-label">Total Inquiries</span>
+              <strong id="totalLeadsCount" class="stat-number">0</strong>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrap teal">⚡</div>
+            <div class="stat-details">
+              <span class="stat-label">Active Services</span>
+              <strong class="stat-number">5 Core</strong>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrap blue">🌐</div>
+            <div class="stat-details">
+              <span class="stat-label">Hosting Engine</span>
+              <strong class="stat-number">Vercel Edge</strong>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon-wrap green">🔒</div>
+            <div class="stat-details">
+              <span class="stat-label">SSL Encryption</span>
+              <strong class="stat-number">Active (200 OK)</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEADS TABLE -->
+        <div class="content-box">
+          <div class="box-header">
+            <div>
+              <h2>Recent Inquiries & Quotes</h2>
+              <p>Clients who contacted you or used the interactive project calculator.</p>
+            </div>
+            <div class="box-actions">
+              <button id="exportCsvBtn" class="btn-secondary-sm">📥 Export to CSV</button>
+              <button id="clearLeadsBtn" class="btn-danger-sm">🗑 Clear All</button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="leads-table">
+              <thead>
+                <tr>
+                  <th>Date & Time</th>
+                  <th>Client Name</th>
+                  <th>Contact Info</th>
+                  <th>Service Selected</th>
+                  <th>Brief / Estimate</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="leadsTableBody">
+                <!-- Dynamically populated or empty state -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: SERVICES & PRICING -->
+      <section id="tab-services" class="admin-tab-pane">
+        <div class="content-box">
+          <div class="box-header">
+            <div>
+              <h2>Service Base Rates (₹ INR)</h2>
+              <p>Configure pricing used by the interactive project calculator on your homepage.</p>
+            </div>
+            <button id="savePricingBtn" class="btn-primary-sm">💾 Save Rates</button>
+          </div>
+
+          <form id="pricingForm" class="grid-form">
+            <div class="form-card">
+              <h3>🎨 Branding & Identity</h3>
+              <div class="form-group">
+                <label>Base Price (₹)</label>
+                <input type="number" id="priceBranding" value="15000">
+              </div>
+              <p class="card-desc">Visual guidelines, mascot adaptations, brand kits, typography.</p>
+            </div>
+
+            <div class="form-card">
+              <h3>📱 UI / UX Design</h3>
+              <div class="form-group">
+                <label>Base Price (₹)</label>
+                <input type="number" id="priceUiux" value="20000">
+              </div>
+              <p class="card-desc">Figma wireframes, conversion architecture, interactive prototypes.</p>
+            </div>
+
+            <div class="form-card">
+              <h3>💻 Custom Web Development</h3>
+              <div class="form-group">
+                <label>Base Price (₹)</label>
+                <input type="number" id="priceWebdev" value="28000">
+              </div>
+              <p class="card-desc">High-speed responsive web applications, zero bloat, mobile optimization.</p>
+            </div>
+
+            <div class="form-card">
+              <h3>🚀 SEO & Performance</h3>
+              <div class="form-group">
+                <label>Base Price (₹)</label>
+                <input type="number" id="priceSeo" value="12000">
+              </div>
+              <p class="card-desc">Local Kolkata citation SEO, Google Core Web Vitals, organic ranking.</p>
+            </div>
+
+            <div class="form-card">
+              <h3>📸 Product Photography</h3>
+              <div class="form-group">
+                <label>Base Price (₹)</label>
+                <input type="number" id="pricePhoto" value="18000">
+              </div>
+              <p class="card-desc">Commercial studio shoots, e-commerce catalog imagery, video reels.</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- TAB 3: BUSINESS INFO -->
+      <section id="tab-agency" class="admin-tab-pane">
+        <div class="content-box">
+          <div class="box-header">
+            <div>
+              <h2>Agency Contact & Socials</h2>
+              <p>Set your official WhatsApp number, phone, email, and Kolkata office details.</p>
+            </div>
+            <button id="saveAgencyBtn" class="btn-primary-sm">💾 Save Business Details</button>
+          </div>
+
+          <form id="agencyForm" class="settings-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Agency Name</label>
+                <input type="text" id="agencyName" value="Digitally Kolkata">
+              </div>
+              <div class="form-group">
+                <label>Tagline</label>
+                <input type="text" id="agencyTagline" value="High-Impact Digital Marketing & Web Engineering">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>WhatsApp Number (with Country Code e.g. 919830000000)</label>
+                <input type="text" id="agencyWhatsApp" value="919830000000">
+                <small class="hint">Inquiries from the website will automatically open chats to this number.</small>
+              </div>
+              <div class="form-group">
+                <label>Public Email Address</label>
+                <input type="email" id="agencyEmail" value="hello@digitallykolkata.online">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone Display</label>
+                <input type="text" id="agencyPhone" value="+91 98300 00000">
+              </div>
+              <div class="form-group">
+                <label>Office Address</label>
+                <input type="text" id="agencyAddress" value="Salt Lake Sector V, Kolkata, West Bengal 700091">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- TAB 4: PORTFOLIO WORK -->
+      <section id="tab-portfolio" class="admin-tab-pane">
+        <div class="content-box">
+          <div class="box-header">
+            <div>
+              <h2>Featured Case Studies</h2>
+              <p>Manage showcased projects, metrics, and categories.</p>
+            </div>
+            <button id="addProjectBtn" class="btn-primary-sm">+ Add Project</button>
+          </div>
+
+          <div class="portfolio-list" id="portfolioList">
+            <!-- Sample Active Projects -->
+            <div class="portfolio-admin-item">
+              <div class="item-info">
+                <h4>Bengal Silks D2C Platform</h4>
+                <p>E-Commerce, Web Dev, UI/UX • <strong>+340% Mobile Conversions</strong></p>
+              </div>
+              <div class="item-badge">Active on Home</div>
+            </div>
+
+            <div class="portfolio-admin-item">
+              <div class="item-info">
+                <h4>FinVeda Corporate Identity</h4>
+                <p>Branding, Identity, Print • <strong>Full Brand Transformation</strong></p>
+              </div>
+              <div class="item-badge">Active on Home</div>
+            </div>
+
+            <div class="portfolio-admin-item">
+              <div class="item-info">
+                <h4>Kolkata Culinary Festival</h4>
+                <p>Social Media, Photography, Ads • <strong>2.4M Social Impressions</strong></p>
+              </div>
+              <div class="item-badge">Active on Home</div>
+            </div>
+
+            <div class="portfolio-admin-item">
+              <div class="item-info">
+                <h4>UrbanCraft Tech Architecture</h4>
+                <p>Web Development, SEO • <strong>99+ Performance Score</strong></p>
+              </div>
+              <div class="item-badge">Active on Home</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: SECURITY & SETTINGS -->
+      <section id="tab-settings" class="admin-tab-pane">
+        <div class="content-box">
+          <div class="box-header">
+            <div>
+              <h2>Admin Security & Passcode</h2>
+              <p>Change your private dashboard passcode.</p>
+            </div>
+          </div>
+
+          <form id="securityForm" class="security-form">
+            <div class="form-group">
+              <label>Current Passcode</label>
+              <input type="password" id="currentPasscode" placeholder="Enter current passcode">
+            </div>
+            <div class="form-group">
+              <label>New Passcode</label>
+              <input type="password" id="newPasscode" placeholder="Enter new passcode (minimum 4 characters)">
+            </div>
+            <button type="submit" class="btn-primary-sm">Update Passcode</button>
+          </form>
+        </div>
+
+        <div class="content-box mt-4">
+          <div class="box-header">
+            <div>
+              <h2>Zero InfinityFree / Serverless Architecture</h2>
+              <p>Your platform runs completely independent of shared hosting servers.</p>
+            </div>
+          </div>
+          <div class="serverless-info">
+            <div class="info-row">
+              <strong>Hosting:</strong> <span>Vercel Global Edge (Zero Server Maintenance)</span>
+            </div>
+            <div class="info-row">
+              <strong>Source Control:</strong> <span>GitHub Repository (<code>imrayn06/Digitally-Kolkata</code>)</span>
+            </div>
+            <div class="info-row">
+              <strong>Speed:</strong> <span>~180ms Response Time (India edge node <code>bom1</code>)</span>
+            </div>
+            <div class="info-row">
+              <strong>Cost:</strong> <span>₹0 / Free Forever (Unlimited SSL & Bandwidth)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="adminToast" class="admin-toast">
+    <span id="toastText">Changes saved successfully!</span>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
