@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Open WhatsApp after brief delay for smooth UX
       setTimeout(() => {
-        window.open(`https://wa.me/919830000000?text=${waText}`, '_blank');
+        window.open(`https://wa.me/919073277478?text=${waText}`, '_blank');
       }, 1200);
 
       leadForm.reset();
