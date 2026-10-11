@@ -35,30 +35,131 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
 
+  <!-- Agentic Web Standards & Discovery -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Agent Knowledge Base">
+  <meta name="geo.region" content="IN-WB">
+  <meta name="geo.placename" content="Kolkata">
+  <meta name="geo.position" content="22.5802;88.4271">
+  <meta name="ICBM" content="22.5802, 88.4271">
+
   <!-- Master Styles -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Schema.org Structured Data -->
+  <!-- Rich Structured Data Graph (Agentic Browsing & Search Generative AI Optimization) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Digitally Kolkata",
-    "image": "https://www.digitallykolkata.online/assets/logo-large.png",
-    "@id": "https://www.digitallykolkata.online/",
-    "url": "https://www.digitallykolkata.online/",
-    "telephone": "+91 98300 00000",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Kolkata Tech Hub",
-      "addressLocality": "Kolkata",
-      "addressRegion": "West Bengal",
-      "postalCode": "700091",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://facebook.com/digitallykolkata"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.digitallykolkata.online/#website",
+        "url": "https://www.digitallykolkata.online/",
+        "name": "Digitally Kolkata",
+        "description": "Digital Marketing, Brand Strategy & High-Velocity Web Engineering in Kolkata",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://www.digitallykolkata.online/#organization"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.digitallykolkata.online/#organization",
+        "name": "Digitally Kolkata",
+        "alternateName": "DK Agency",
+        "url": "https://www.digitallykolkata.online/",
+        "logo": "https://www.digitallykolkata.online/assets/logo-large.png",
+        "image": "https://www.digitallykolkata.online/assets/logo-large.png",
+        "telephone": "+91 98300 00000",
+        "email": "duttarayan3@gmail.com",
+        "priceRange": "₹12,000 - ₹1,50,000",
+        "founder": {
+          "@id": "https://www.digitallykolkata.online/#founder"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Salt Lake Sector V",
+          "addressLocality": "Kolkata",
+          "addressRegion": "West Bengal",
+          "postalCode": "700091",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 22.5802,
+          "longitude": 88.4271
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:30",
+            "closes": "20:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "42",
+          "bestRating": "5"
+        },
+        "sameAs": [
+          "https://github.com/imrayn06",
+          "https://www.linkedin.com/in/im-rayn/",
+          "https://x.com/imsneh06?s=09"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.digitallykolkata.online/#founder",
+        "name": "Shenehashis Dutta",
+        "jobTitle": "Founder & Lead Strategist",
+        "image": "https://www.digitallykolkata.online/assets/portfolio/founder-photo.png",
+        "description": "Ex-Software Engineer & QA at Q3 Technologies and Wipro transitioning into high-impact digital marketing, campaign planning, and crawler-level SEO.",
+        "url": "https://narayan-portfolio-three.vercel.app/",
+        "sameAs": [
+          "https://www.linkedin.com/in/im-rayn/",
+          "https://github.com/imrayn06"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.digitallykolkata.online/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What services does Digitally Kolkata provide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Digitally Kolkata specializes in Brand Identity, Custom High-Speed Web Development, UI/UX Design, Commercial Product Photography, Technical SEO, and End-to-End Social Media Campaign Planning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a custom website or campaign cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Project investments start from ₹12,000 INR for landing page architectures and ₹28,000+ INR for comprehensive web applications. Use our interactive estimator on https://www.digitallykolkata.online/#estimator for instant transparent pricing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the typical project delivery timeline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard landing pages and identity projects ship in 1 to 2 weeks. Comprehensive multi-page platforms and full branding suites typically take 2 to 4 weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who leads the strategy at Digitally Kolkata?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The agency is led by Shenehashis Dutta, a former Software Engineer with QA testing background at Q3 Technologies and Wipro, certified by HubSpot Academy and KDMI."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>

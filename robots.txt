@@ -1,0 +1,39 @@
+# Robots.txt for Digitally Kolkata
+# https://www.digitallykolkata.online/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin
+
+# Modern AI & Agentic Crawlers (Full Access Granted for AI Search & Research)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Canonical Sitemaps & LLM Context
+Sitemap: https://www.digitallykolkata.online/sitemap.xml
+Host: https://www.digitallykolkata.online

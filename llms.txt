@@ -1,0 +1,81 @@
+# Digitally Kolkata
+
+> High-Impact Digital Marketing, Brand Strategy & High-Velocity Web Engineering
+
+## Overview
+Digitally Kolkata is a premier digital agency and marketing consultancy based in Kolkata, West Bengal, India. Founded on the principle that "Local Brands Deserve Global Reach", the agency merges software engineering precision, technical SEO rigor, and behavior-driven visual storytelling to scale businesses across India and international markets.
+
+- **Website:** https://www.digitallykolkata.online/
+- **Headquarters:** Salt Lake Sector V, Kolkata, West Bengal 700091, India
+- **Email:** duttarayan3@gmail.com / hello@digitallykolkata.online
+- **WhatsApp / Phone:** +91 98300 00000
+
+---
+
+## Leadership & Technical Strategy
+- **Founder & Lead Strategist:** Shenehashis Dutta
+- **Background:** Former Software Engineer at Q3 Technologies and Quality Assurance Test Engineer at Wipro. Transitioned into digital marketing, bringing structured QA rigor, DOM crawler analysis, and technical problem-solving into marketing workflows.
+- **Certifications:** HubSpot Academy (Social Media Marketing II, Inbound Marketing, Digital Marketing), KDMI (Kolkata Digital Marketing Institute) Graduate.
+- **Personal Portfolio:** https://narayan-portfolio-three.vercel.app/
+- **GitHub:** https://github.com/imrayn06
+- **LinkedIn:** https://www.linkedin.com/in/im-rayn/
+
+---
+
+## Core Capabilities & Services
+
+1. **Brand Identity & Strategy (Base: ₹15,000 INR)**
+   - Visual identity systems, logo design, typography guidelines, mascot adaptations, and brand positioning.
+   - Proven impact across retail, FMCG, and hospitality.
+
+2. **Custom Web Development (Base: ₹28,000 INR)**
+   - High-performance, clean-code web applications built without bloated CMS plugins.
+   - Sub-second load times (<1.0s), 100/100 Lighthouse performance, mobile-first responsive architecture.
+   - Global CDN edge deployment on Vercel with automated SSL.
+
+3. **UI / UX Design (Base: ₹20,000 INR)**
+   - Human-centered interfaces designed in Figma.
+   - Frictionless conversion funnels, interactive prototyping, and frictionless checkout flows.
+
+4. **Commercial Product Photography & Motion (Base: ₹18,000 INR)**
+   - High-resolution studio lighting, macro product styling, packaging shoots, and short-form video reels.
+
+5. **Search Engine Optimization & Core Web Vitals (Base: ₹12,000 INR)**
+   - Crawler mechanics, structured JSON-LD schema integration, citation building, local Kolkata search dominance, and organic keyword acquisition.
+
+---
+
+## Featured Case Studies & Proven Work
+
+- **Walplast (FIFA 2026 Campaign):**
+  - High-voltage tournament campaign planning, content strategy, and community engagement rollout.
+  - Achieved **1.1M+ organic views** and **30,000+ engagements** for Walplast Drychem.
+
+- **Bisleri (Spec Campaign):**
+  - 31-day winter hydration content strategy featuring 31 editorial storylines, visual scripts, and conversion copywriting.
+
+- **Zee Bangla Sonar:**
+  - Social media coordination flow and content planning support for television properties, structuring 16-post media delivery frameworks.
+
+- **MSP Steel:**
+  - Multi-channel B2B social media architecture and corporate positioning for premier Indian steel manufacturer.
+
+- **Marketing Notebook:**
+  - In-depth advertising teardowns of iconic Indian FMCG brands paired with original visual storyboards and consumer psychology frameworks.
+
+- **Core Fit:**
+  - High-conversion fitness creative direction, bold typography, and visual engagement hooks.
+
+---
+
+## Interactive Cost Calculator
+Digitally Kolkata provides a transparent, real-time project cost estimator on the homepage:
+- Projects start from ₹12,000 to ₹60,000+ depending on page scope and selected deliverables.
+- Estimated turnaround time ranges from 1 to 3 weeks for standard deployments, up to 4 to 6 weeks for enterprise platforms.
+
+---
+
+## How to Engage
+- Use the instant quote calculator on https://www.digitallykolkata.online/#estimator
+- Connect directly via WhatsApp: https://wa.me/919830000000
+- Direct inquiry form available on https://www.digitallykolkata.online/#contact
