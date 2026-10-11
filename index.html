@@ -31,7 +31,11 @@
   <!-- Google Fonts: Official Manrope Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </noscript>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/logo.png">
@@ -45,7 +49,7 @@
   <meta name="ICBM" content="22.5802, 88.4271">
 
   <!-- Master Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.min.css">
 
   <!-- Rich Structured Data Graph (Agentic Browsing & Search Generative AI Optimization) -->
   <script type="application/ld+json">
@@ -245,26 +249,27 @@
           <div class="hero-media-col">
             <div class="hero-media-wrap">
               <picture>
+                <source media="(max-width: 768px)" srcset="assets/HeroSection-poster.webp" type="image/webp">
                 <source srcset="assets/HeroSection.webp" type="image/webp">
-                <img src="assets/HeroSection.gif" alt="Digitally Kolkata Creative Animation" class="hero-gif" width="530" height="298" fetchpriority="high" decoding="async">
+                <img src="assets/HeroSection-poster.webp" alt="Digitally Kolkata Creative Animation" class="hero-gif" width="530" height="298" fetchpriority="high" decoding="async">
               </picture>
             </div>
           </div>
         </div>
 
-        <!-- Metric Counters -->
+        <!-- Metric Counters (Honest Craft & Performance Metrics) -->
         <div class="hero-metrics">
           <div class="metric-item">
-            <div class="metric-val">120+</div>
-            <div class="metric-label">Projects Projected</div>
+            <div class="metric-val">1:1</div>
+            <div class="metric-label">Direct Founder Execution</div>
           </div>
           <div class="metric-item">
-            <div class="metric-val">4.5x</div>
-            <div class="metric-label">Projected Client ROI</div>
+            <div class="metric-val">5</div>
+            <div class="metric-label">Core Growth Disciplines</div>
           </div>
           <div class="metric-item">
-            <div class="metric-val">99.8%</div>
-            <div class="metric-label">Client Satisfaction</div>
+            <div class="metric-val">100%</div>
+            <div class="metric-label">Bespoke Clean Code</div>
           </div>
           <div class="metric-item">
             <div class="metric-val">&lt;0.8s</div>
@@ -827,7 +832,7 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">Services</h4>
+          <h3 class="footer-col-title">Services</h3>
           <ul class="footer-links">
             <li><a href="#services" class="footer-link">Branding</a></li>
             <li><a href="#services" class="footer-link">UI/UX Design</a></li>
@@ -838,7 +843,7 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">Navigation</h4>
+          <h3 class="footer-col-title">Navigation</h3>
           <ul class="footer-links">
             <li><a href="#home" class="footer-link">Home</a></li>
             <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
@@ -849,7 +854,7 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">Free Website Audit</h4>
+          <h3 class="footer-col-title">Free Website Audit</h3>
           <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:12px;">Get a comprehensive performance, design, and SEO audit for your brand.</p>
           <a href="#contact" class="btn btn-secondary btn-sm" style="width:100%;">
             <span>Claim Audit</span>
