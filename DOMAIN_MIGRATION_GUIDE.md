@@ -9,7 +9,7 @@ This document guarantees that your **Digitally Kolkata** web platform is 100% ba
 Your website is backed up across multiple redundant locations:
 
 1. **Remote Cloud Backup (GitHub Permanent Release Tag):**
-   - Repository: `https://github.com/imrayn06/Digitally-Kolkata`
+   - Repository: `https://github.com/imsneh06/Digitally-Kolkata`
    - Production Release Tag: `v1.0-stable`
    - Every file, image, WebP asset, stylesheet, and commit history is stored on GitHub.
 

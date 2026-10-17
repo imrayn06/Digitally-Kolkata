@@ -47,7 +47,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 🌐 Deploying to `digitallykolkata.online` (Cloudflare Pages)
 
-1. Connect this GitHub repository (`imrayn06/Digitally-Kolkata`) to **Cloudflare Pages** or **Vercel**.
+1. Connect this GitHub repository (`imsneh06/Digitally-Kolkata`) to **Cloudflare Pages** or **Vercel**.
 2. Set build command to `(None)` and root directory to `/`.
 3. Add custom domain: `digitallykolkata.online`.
 4. Free SSL and global edge CDN caching will automatically be active worldwide!
